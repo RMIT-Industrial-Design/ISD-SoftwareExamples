@@ -91,7 +91,7 @@ class Face {
            + " scale: " + poseScale + "\n"
            + " position: " + posePosition.toString() + "\n"
            + " orientation: " + poseOrientation.toString() + "\n"
-           + "gesture" + "\n"
+           + " gesture" + "\n"
            + " mouth: " + mouthWidth + " " + mouthHeight + "\n"
            + " eye: " + eyeLeft + " " + eyeRight + "\n"
            + " eyebrow: " + eyebrowLeft + " " + eyebrowRight + "\n"
