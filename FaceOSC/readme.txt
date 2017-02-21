@@ -22,6 +22,27 @@ Key Controls
 
 * r - reset the face tracker
 * m - toggle face mesh drawing
+* g - toggle gui's visibility
 * p - pause/unpause (only works with movie source) 
-* up/down - increase/decrease movie playback speed (only orks with movie source)
+* up/down - increase/decrease movie playback speed (only works with movie source)
+
+
+Osc Information
+---------------
+
+ * Pose
+  * **center position**: /pose/position
+  * **scale**: /pose/scale
+  * **orientation** (which direction you're facing): /pose/orientation
+ * Gestures
+  * **mouth width**: /gesture/mouth/width
+  * **mouth height**: /gesture/mouth/height
+  * **left eyebrow height**: /gesture/eyebrow/left
+  * **right eyebrow height**: /gesture/eyebrow/right
+  * **left eye openness**: /gesture/eye/left
+  * **right eye openness**: /gesture/eye/right
+  * **jaw openness**: /gesture/jaw
+  * **nostril flate**: /gesture/nostrils
+ * Raw
+  * **raw points** (66 xy-pairs): /raw
 
