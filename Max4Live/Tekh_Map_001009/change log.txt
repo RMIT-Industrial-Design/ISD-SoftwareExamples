@@ -1,0 +1,90 @@
+Visit ethnotekh.com for more information on these devices.
+By Ethno Tekh 2014.
+
+
+Tekh Map v001009
+----------------
+The Master:
+ - Database of OSC addresses now stores with Live set.
+ - Added feature to allow manual entry of OSC addresses into the database instead of using the "update db" - though that feature still exists.
+
+The Note:
+ - Fixed bug where parameters were not recalled correctly on Ableton Live set load.
+
+The Dial:
+ - Fixed bug where names for each parameter weren't being correctly formatted to OSC-friendly names.
+ 
+
+Tekh Map v001008
+----------------
+General:
+ - Fixed critical bug which required the user to re-enter the OSC input address on each input after reloading the set.
+
+The Dial:
+ - Fixed bug which would switch the output toggle of each dial device to "off" when reloading the set.
+ - Fixed bug where dial "name" parameter would not store correctly.
+ - Fixed bug where 1/0 conditional output flag would initialise on set load as 0, disabling output
+ - Parameter on/off values are now automatable in the clip envelope automation
+
+The Master:
+ - Fixed bug preventing OSC output port modification
+
+
+Tekh Map v001007
+----------------
+The Note:
+ - Added "Wait for Velocity" mode. This new function allows you to delay the note generation until a new velocity has been received. Automatically engaged when pitch and velocity are receiving on the same address.
+
+
+Tekh Map v001006
+----------------
+General:
+ - Fixed bug which prevented the Master device from populating incoming OSC addresses
+
+
+Tekh Map v001005
+----------------
+General:
+ - Speed calculation now creates a larger range of values 
+
+The Dial:
+ - Condition settings now reset correctly when the device is reset
+ - Each dial device fades in when the user selects a new unit
+
+
+Tekh Map v001004
+----------------
+The Note:
+ - A number of bug fixes regarding note triggering
+ - Added visual "wires" to make it more obvious which parameter input is being edited
+
+
+Tekh Map v001003
+----------------
+The Note added!
+
+General:
+ - Implemented final design style
+ - Added "update db" button to listen for new OSC addresses straight from any input module
+
+The Dial:
+ - Changed more UI elements. General re-jigging
+ - Changed name / OSC output addresses to be "/name[index]" by default, where [index] is the index number of the parameter unit per device
+
+
+Tekh Map v001002
+----------------
+The Master:
+ - Added address database list to view input items
+ - Added display to view data from specific OSC address selected in the database list
+ - Added "clear db" button to wipe all the OSC input addresses from the database
+ - Changed "update db" to stay engaged for 10 seconds before disabling
+
+The Dial:
+ - Changed a number of labels to reflect the items' functions more appropriately
+
+
+Tekh Map v001001
+----------------
+The Master added!
+The Dial added!
