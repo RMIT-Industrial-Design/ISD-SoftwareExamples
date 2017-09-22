@@ -1,155 +1,106 @@
 sorted list                                                    calls       self time      total time
-<unprofiled>                                                     0.0     40 ms  262%     56 ms  362%
-edge_dist_loop                                                  14.6      5 ms   34%      5 ms   34%
-calculate_edge_distance                                         14.6      5 ms   29%     10 ms   63%
-calculate_layer_score                                           14.6      1 ms    7%      1 ms    7%
-calculate_integral_area                                         14.6    796 us    5%    796 us    5%
-get_circumference_points                                       721.9    593 us    4%    593 us    4%
-depth_to_velocity_signal                                         0.9    584 us    4%    794 us    5%
-enqueue_neighbors                                             9788.4    502 us    3%    502 us    3%
-segment_foreground_and_get_average_depth                        15.0    402 us    3%      1 ms    7%
-track_point_from_seed                                           15.0    320 us    2%     14 ms   93%
-get_max_sequential_circumference_percentage                    721.9    211 us    1%    804 us    5%
-get_percent_natural_edges                                       63.8    184 us    1%    184 us    1%
-calculate_area                                                   0.9    181 us    1%    181 us    1%
-find_nearest_in_range_pixel                                      1.1    176 us    1%    349 us    2%
-depthframe_to_matrix                                             0.9    126 us    1%    126 us    1%
-create_test_pass_from_foreground                                 3.1    102 us    1%      1 ms    8%
-test_point_area_integral                                      1432.1     97 us    1%     97 us    1%
-track_points                                                     0.9     57 us    0%     15 ms   95%
-adjust_velocities_for_depth                                      0.9     52 us    0%     52 us    0%
-test_foreground_radius_percentage                              361.0     49 us    0%    853 us    6%
-fill_zero_values                                                 0.9     29 us    0%     29 us    0%
-find_next_velocity_seed_pixel                                   13.2     18 us    0%     18 us    0%
-on_frame_ready                                                   0.9     15 us    0%     15 ms  100%
-update_trajectories                                              0.9     11 us    0%     11 us    0%
-end_write                                                        0.9      7 us    0%      7 us    0%
-test_natural_edges                                              63.8      6 us    0%    189 us    1%
-~hand_tracker                                                    0.1      6 us    0%      6 us    0%
-update_tracked_or_create_new_point_from_seed                    12.3      4 us    0%     12 ms   78%
-threshold_velocity_signal                                        0.9      4 us    0%      4 us    0%
-validate_and_update_tracked_point                                2.7      2 us    0%      4 us    0%
-update_tracking                                                  0.9      2 us    0%     15 ms  100%
-update_tracked_point                                             2.7      1 us    0%      2 ms   15%
-update_hand_frame                                                0.9    938 ns    0%      1 us    0%
-convert_depth_to_world                                          16.0    757 ns    0%    757 ns    0%
-test_point_in_range                                             15.0    683 ns    0%    683 ns    0%
-start_probation                                                  0.7    545 ns    0%    545 ns    0%
-update_tracked_points                                            0.9    491 ns    0%      2 ms   15%
-update_tracked_point_data                                        2.0    460 ns    0%    575 ns    0%
-update_full_resolution_points                                    0.9    376 ns    0%    381 ns    0%
-generate_hand_frame                                              0.9    365 ns    0%      9 us    0%
-reset_hand_point                                                 8.1    343 ns    0%    343 ns    0%
-initialize_common_calculations                                   0.9    309 ns    0%    181 us    1%
-remove_stale_or_dead_points                                      0.9    247 ns    0%    247 ns    0%
-astra_depth_fetch_conversion_cache                               0.9    136 ns    0%    136 ns    0%
-remove_duplicate_points                                          0.9    100 ns    0%    100 ns    0%
-end_probation                                                    0.2     90 ns    0%     90 ns    0%
-copy_position                                                    1.8     76 ns    0%     76 ns    0%
-smooth_world_positions                                           0.6      5 ns    0%      5 ns    0%
-update_tracked_point_from_world_position                         0.6      0 ns    0%      0 ns    0%
-convert_hand_status                                              0.9      0 ns    0%      0 ns    0%
-convert_world_to_depth                                           0.0      0 ns    0%      0 ns    0%
-depth_cache_get                                                  0.0      0 ns    0%      0 ns    0%
-create_streams                                                   0.0      0 ns    0%      0 ns    0%
-hand_tracker                                                     0.0      0 ns    0%      0 ns    0%
-depth_utility                                                    0.0      0 ns    0%      0 ns    0%
-reset                                                            0.0      0 ns    0%      0 ns    0%
-~point_processor                                                 0.1      0 ns    0%      0 ns    0%
+<unprofiled>                                                     0.0    135 ms 10816%    137 ms 1091
+depth_to_velocity_signal                                         0.9    587 us   47%    813 us   65%
+calculate_area                                                   0.9    233 us   19%    233 us   19%
+depthframe_to_matrix                                             0.9    125 us   10%    125 us   10%
+adjust_velocities_for_depth                                      0.9     70 us    6%     70 us    6%
+track_points                                                     0.9     54 us    4%    391 us   31%
+calculate_edge_distance                                          0.1     32 us    3%     61 us    5%
+edge_dist_loop                                                   0.1     28 us    2%     28 us    2%
+fill_zero_values                                                 0.9     26 us    2%     26 us    2%
+~hand_tracker                                                    0.1     16 us    1%     16 us    1%
+find_next_velocity_seed_pixel                                    1.0     13 us    1%     13 us    1%
+hand_tracker                                                     0.0     12 us    1%     13 us    1%
+on_frame_ready                                                   0.9      9 us    1%      1 ms   98%
+get_circumference_points                                         7.5      9 us    1%      9 us    1%
+end_write                                                        0.9      8 us    1%      8 us    1%
+calculate_layer_score                                            0.1      7 us    1%      7 us    1%
+threshold_velocity_signal                                        0.9      5 us    0%      5 us    0%
+calculate_integral_area                                          0.1      4 us    0%      4 us    0%
+track_point_from_seed                                            0.1      2 us    0%     89 us    7%
+get_max_sequential_circumference_percentage                      7.5      2 us    0%     11 us    1%
+segment_foreground_and_get_average_depth                         0.1      2 us    0%      3 us    0%
+update_tracking                                                  0.9      1 us    0%      1 ms   97%
+update_hand_frame                                                0.9    897 ns    0%      1 us    0%
+enqueue_neighbors                                               15.0    771 ns    0%    771 ns    0%
+create_test_pass_from_foreground                                 0.1    763 ns    0%     12 us    1%
+reset_hand_point                                                 9.0    454 ns    0%    454 ns    0%
+test_foreground_radius_percentage                                3.8    449 ns    0%     11 us    1%
+astra_depth_fetch_conversion_cache                               0.9    381 ns    0%    399 ns    0%
+reset                                                            0.0    315 ns    0%    315 ns    0%
+generate_hand_frame                                              0.9    284 ns    0%      9 us    1%
+create_streams                                                   0.0    246 ns    0%    246 ns    0%
+convert_depth_to_world                                           0.1    244 ns    0%    244 ns    0%
+initialize_common_calculations                                   0.9    207 ns    0%    233 us   19%
+test_point_area_integral                                         3.8    178 ns    0%    178 ns    0%
+update_tracked_or_create_new_point_from_seed                     0.1    174 ns    0%     90 us    7%
+get_percent_natural_edges                                        0.0    139 ns    0%    139 ns    0%
+remove_duplicate_points                                          0.9     90 ns    0%     90 ns    0%
+update_tracked_points                                            0.9     87 ns    0%     87 ns    0%
+remove_stale_or_dead_points                                      0.9     23 ns    0%     23 ns    0%
+depth_cache_get                                                  0.0     18 ns    0%     18 ns    0%
+depth_utility                                                    0.0      3 ns    0%    319 ns    0%
+update_trajectories                                              0.9      1 ns    0%      1 ns    0%
+update_full_resolution_points                                    0.9      0 ns    0%      0 ns    0%
 ~depth_utility                                                   0.1      0 ns    0%      0 ns    0%
+~point_processor                                                 0.1      0 ns    0%      0 ns    0%
+test_point_in_range                                              0.1      0 ns    0%      0 ns    0%
+test_natural_edges                                               0.0      0 ns    0%    139 ns    0%
 point_processor                                                  0.0      0 ns    0%      0 ns    0%
 
 call tree                                                      calls       self time      total time
-<unprofiled>                                                     0.0     40 ms  262%     56 ms  362%
-  depth_utility                                                  0.0      0 ns    0%      0 ns    0%
-    reset                                                        0.0      0 ns    0%      0 ns    0%
+<unprofiled>                                                     0.0    135 ms 10816%    137 ms 1091
+  depth_utility                                                  0.0      3 ns    0%    319 ns    0%
+    reset                                                        0.0    315 ns    0%    315 ns    0%
   point_processor                                                0.0      0 ns    0%      0 ns    0%
-  hand_tracker                                                   0.0      0 ns    0%      0 ns    0%
-    create_streams                                               0.0      0 ns    0%      0 ns    0%
-  astra_depth_fetch_conversion_cache                             0.0      0 ns    0%      0 ns    0%
-    depth_cache_get                                              0.0      0 ns    0%      0 ns    0%
-  on_frame_ready                                                 0.9     15 us    0%     15 ms  100%
-    update_tracking                                              0.9      2 us    0%     15 ms  100%
-      depth_to_velocity_signal                                   0.9    584 us    4%    794 us    5%
-        depthframe_to_matrix                                     0.9    126 us    1%    126 us    1%
-        fill_zero_values                                         0.9     29 us    0%     29 us    0%
-        adjust_velocities_for_depth                              0.9     52 us    0%     52 us    0%
-        threshold_velocity_signal                                0.9      4 us    0%      4 us    0%
-      track_points                                               0.9     57 us    0%     15 ms   95%
-        astra_depth_fetch_conversion_cache                       0.9    136 ns    0%    136 ns    0%
-          depth_cache_get                                        0.0      0 ns    0%      0 ns    0%
-        initialize_common_calculations                           0.9    309 ns    0%    181 us    1%
-          calculate_area                                         0.9    181 us    1%    181 us    1%
-        update_tracked_points                                    0.9    491 ns    0%      2 ms   15%
-          update_tracked_point                                   2.7      1 us    0%      2 ms   15%
-            track_point_from_seed                                2.7     57 us    0%      2 ms   15%
-              segment_foreground_and_get_average_depth           2.7     30 us    0%    398 us    3%
-                enqueue_neighbors                              371.3     19 us    0%     19 us    0%
-                find_nearest_in_range_pixel                      1.1    176 us    1%    349 us    2%
-                  enqueue_neighbors                           3504.1    173 us    1%    173 us    1%
-              calculate_edge_distance                            2.2    697 us    5%      1 ms   10%
-                edge_dist_loop                                   2.2    780 us    5%    780 us    5%
-              calculate_integral_area                            2.2    119 us    1%    119 us    1%
-              calculate_layer_score                              2.2    173 us    1%    173 us    1%
-              test_point_area_integral                           2.0    485 ns    0%    485 ns    0%
-              test_foreground_radius_percentage                  2.0    349 ns    0%      9 us    0%
-                get_max_sequential_circumference_percentage      4.0      2 us    0%      9 us    0%
-                  get_circumference_points                       4.0      7 us    0%      7 us    0%
-              test_natural_edges                                 2.0    303 ns    0%      7 us    0%
-                get_percent_natural_edges                        2.0      7 us    0%      7 us    0%
-              create_test_pass_from_foreground                   0.0      1 us    0%      8 us    0%
-                test_point_area_integral                        20.4      1 us    0%      1 us    0%
-                test_foreground_radius_percentage                2.4    333 ns    0%      5 us    0%
-                  get_max_sequential_circumference_percentage    4.7      1 us    0%      5 us    0%
-                    get_circumference_points                     4.7      3 us    0%      3 us    0%
-                test_natural_edges                               0.1      6 ns    0%    266 ns    0%
-                  get_percent_natural_edges                      0.1    259 ns    0%    259 ns    0%
-            validate_and_update_tracked_point                    2.7      2 us    0%      4 us    0%
-              test_point_in_range                                2.7     61 ns    0%     61 ns    0%
-              update_tracked_point_data                          2.0    460 ns    0%    575 ns    0%
-                convert_depth_to_world                           2.0    115 ns    0%    115 ns    0%
-              start_probation                                    0.6    545 ns    0%    545 ns    0%
-              end_probation                                      0.2     90 ns    0%     90 ns    0%
-            convert_world_to_depth                               0.0      0 ns    0%      0 ns    0%
-        remove_duplicate_points                                  0.9    100 ns    0%    100 ns    0%
-        find_next_velocity_seed_pixel                           13.2     18 us    0%     18 us    0%
-        remove_stale_or_dead_points                              0.9    247 ns    0%    247 ns    0%
-        update_full_resolution_points                            0.9    376 ns    0%    381 ns    0%
-          smooth_world_positions                                 0.6      5 ns    0%      5 ns    0%
-          update_tracked_point_from_world_position               0.6      0 ns    0%      0 ns    0%
-        update_trajectories                                      0.9     11 us    0%     11 us    0%
-          end_probation                                          0.0      0 ns    0%      0 ns    0%
-        update_tracked_or_create_new_point_from_seed            12.3      4 us    0%     12 ms   78%
-          convert_depth_to_world                                14.0    642 ns    0%    642 ns    0%
-          track_point_from_seed                                 12.3    264 us    2%     12 ms   78%
-            segment_foreground_and_get_average_depth            12.3    371 us    2%    681 us    4%
-              enqueue_neighbors                               5913.0    310 us    2%    310 us    2%
-            calculate_edge_distance                             12.3      4 ms   25%      8 ms   54%
-              edge_dist_loop                                    12.3      4 ms   29%      4 ms   29%
-            calculate_integral_area                             12.3    677 us    4%    677 us    4%
-            calculate_layer_score                               12.3    967 us    6%    967 us    6%
-            test_point_area_integral                             3.5    328 ns    0%    328 ns    0%
-            test_foreground_radius_percentage                    2.3    572 ns    0%     11 us    0%
-              get_max_sequential_circumference_percentage        4.7      2 us    0%     10 us    0%
-                get_circumference_points                         4.7      8 us    0%      8 us    0%
-            create_test_pass_from_foreground                     3.1    101 us    1%      1 ms    8%
-              test_point_area_integral                        1406.3     95 us    1%     95 us    1%
-              test_foreground_radius_percentage                354.3     48 us    0%    828 us    5%
-                get_max_sequential_circumference_percentage    708.6    207 us    1%    780 us    5%
-                  get_circumference_points                     708.6    573 us    4%    573 us    4%
-              test_natural_edges                                61.3      5 us    0%    180 us    1%
-                get_percent_natural_edges                       61.3    174 us    1%    174 us    1%
-            test_natural_edges                                   0.4     33 ns    0%      2 us    0%
-              get_percent_natural_edges                          0.4      2 us    0%      2 us    0%
-          test_point_in_range                                   12.3    622 ns    0%    622 ns    0%
-          start_probation                                        0.0      0 ns    0%      0 ns    0%
-      generate_hand_frame                                        0.9    365 ns    0%      9 us    0%
-        update_hand_frame                                        0.9    938 ns    0%      1 us    0%
-          reset_hand_point                                       8.1    343 ns    0%    343 ns    0%
-          copy_position                                          1.8     76 ns    0%     76 ns    0%
-          convert_hand_status                                    0.9      0 ns    0%      0 ns    0%
-        end_write                                                0.9      7 us    0%      7 us    0%
-  ~hand_tracker                                                  0.1      6 us    0%      6 us    0%
+  hand_tracker                                                   0.0     12 us    1%     13 us    1%
+    create_streams                                               0.0    246 ns    0%    246 ns    0%
+  astra_depth_fetch_conversion_cache                             0.0      0 ns    0%     15 ns    0%
+    depth_cache_get                                              0.0     15 ns    0%     15 ns    0%
+  on_frame_ready                                                 0.9      9 us    1%      1 ms   98%
+    update_tracking                                              0.9      1 us    0%      1 ms   97%
+      depth_to_velocity_signal                                   0.9    587 us   47%    813 us   65%
+        depthframe_to_matrix                                     0.9    125 us   10%    125 us   10%
+        fill_zero_values                                         0.9     26 us    2%     26 us    2%
+        adjust_velocities_for_depth                              0.9     70 us    6%     70 us    6%
+        threshold_velocity_signal                                0.9      5 us    0%      5 us    0%
+      track_points                                               0.9     54 us    4%    391 us   31%
+        astra_depth_fetch_conversion_cache                       0.9    381 ns    0%    384 ns    0%
+          depth_cache_get                                        0.0      3 ns    0%      3 ns    0%
+        initialize_common_calculations                           0.9    207 ns    0%    233 us   19%
+          calculate_area                                         0.9    233 us   19%    233 us   19%
+        update_tracked_points                                    0.9     87 ns    0%     87 ns    0%
+        remove_duplicate_points                                  0.9     90 ns    0%     90 ns    0%
+        find_next_velocity_seed_pixel                            1.0     13 us    1%     13 us    1%
+        remove_stale_or_dead_points                              0.9     23 ns    0%     23 ns    0%
+        update_full_resolution_points                            0.9      0 ns    0%      0 ns    0%
+        update_trajectories                                      0.9      1 ns    0%      1 ns    0%
+        update_tracked_or_create_new_point_from_seed             0.1    174 ns    0%     90 us    7%
+          convert_depth_to_world                                 0.1    244 ns    0%    244 ns    0%
+          track_point_from_seed                                  0.1      2 us    0%     89 us    7%
+            segment_foreground_and_get_average_depth             0.1      2 us    0%      3 us    0%
+              enqueue_neighbors                                 15.0    771 ns    0%    771 ns    0%
+            calculate_edge_distance                              0.1     32 us    3%     61 us    5%
+              edge_dist_loop                                     0.1     28 us    2%     28 us    2%
+            calculate_integral_area                              0.1      4 us    0%      4 us    0%
+            calculate_layer_score                                0.1      7 us    1%      7 us    1%
+            test_point_area_integral                             0.1      0 ns    0%      0 ns    0%
+            test_foreground_radius_percentage                    0.1     35 ns    0%    403 ns    0%
+              get_max_sequential_circumference_percentage        0.1     35 ns    0%    368 ns    0%
+                get_circumference_points                         0.1    333 ns    0%    333 ns    0%
+            create_test_pass_from_foreground                     0.1    763 ns    0%     12 us    1%
+              test_point_area_integral                           3.7    178 ns    0%    178 ns    0%
+              test_foreground_radius_percentage                  3.7    415 ns    0%     11 us    1%
+                get_max_sequential_circumference_percentage      7.4      2 us    0%     11 us    1%
+                  get_circumference_points                       7.4      8 us    1%      8 us    1%
+              test_natural_edges                                 0.0      0 ns    0%    139 ns    0%
+                get_percent_natural_edges                        0.0    139 ns    0%    139 ns    0%
+          test_point_in_range                                    0.1      0 ns    0%      0 ns    0%
+      generate_hand_frame                                        0.9    284 ns    0%      9 us    1%
+        update_hand_frame                                        0.9    897 ns    0%      1 us    0%
+          reset_hand_point                                       9.0    454 ns    0%    454 ns    0%
+        end_write                                                0.9      8 us    1%      8 us    1%
+  ~hand_tracker                                                  0.1     16 us    1%     16 us    1%
   ~point_processor                                               0.1      0 ns    0%      0 ns    0%
   ~depth_utility                                                 0.1      0 ns    0%      0 ns    0%
 
